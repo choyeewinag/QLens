@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"; // userEffect to fetch instead of component mount
-import '../public/index.css';
+// import '../public/index.css';
 
 // input field for the mongoDB uri
 const MongoDBURI = ({schemaData, uriData, submitbtn, geturi}) =>  {

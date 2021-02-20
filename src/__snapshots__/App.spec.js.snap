@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckBox Component Renders Correctly snapshot of CheckBox Component renders 1`] = `
+<div
+  className="checkboxContainer"
+  id="box"
+>
+  <form
+    className="checkboxForm"
+  >
+    <label
+      className="checkboxLabel"
+    >
+      <input
+        type="checkbox"
+      />
+    </label>
+  </form>
+</div>
+`;
+
+exports[`Counter snapshot renders 1`] = `
+<div
+  className="checkboxContainer"
+  id="box"
+>
+  <form
+    className="checkboxForm"
+  >
+    <label
+      className="checkboxLabel"
+    >
+      <input
+        type="checkbox"
+      />
+    </label>
+  </form>
+</div>
+`;
+
+exports[`MongoDBURI Component Renders Correctly snapshot of MongoDBURI Component renders 1`] = `
+<div
+  className="formContainer"
+>
+  <div
+    className="formClass"
+  >
+    <form
+      className="form__group field"
+    >
+      <input
+        className="form__field"
+        id="name"
+        placeholder=" Input Your MongoDB URI"
+        type="input"
+      />
+      <label
+        className="form__label"
+        for="name"
+      >
+         MongoDB URI 
+      </label>
+      <input
+        className="URISubmitButton"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </div>
+</div>
+`;
