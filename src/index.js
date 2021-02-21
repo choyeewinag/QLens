@@ -2,6 +2,7 @@
 // Import dependencies
 import React from 'react'
 import { render } from 'react-dom'
+import './public/index.css';
 
 // Import main App component
 import App from './App.js'
