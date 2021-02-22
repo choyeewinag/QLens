@@ -79,7 +79,7 @@ const Container = () => {
       })
         .then(res => res.json())
         .then(data => {
-          // console.log('DATA!!!!', data);
+          console.log('setGraphQLSchema DATA!!!!', data);
           setGraphQLSchema(data);
         })
         .catch((error) => {
@@ -137,7 +137,7 @@ const Container = () => {
     <div>
        <div className="container">
       <img className="logo" src="https://i.ibb.co/PYBbKLK/Screen-Shot-2021-02-11-at-10-21-02-AM.png" alt="QLens-logo" border="0"/>
-      <MongoDBURI schemaData={schemaData} uriData={uriId} geturi={getUri} submitbtn={submit} sendSchemas={sendSchemas} addCheckmark={addCheckmark} />
+      <MongoDBURI schemaData={schemaData} uriData={uriId} geturi={getUri} submitbtn={submit} sendSchemas={sendSchemas} addCheckmark={addCheckmark} data-testId="MongoURIInputButton"/>
       <PlaygroundButton />
     </div>
       <div className="grid-container">

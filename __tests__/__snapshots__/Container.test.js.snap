@@ -13,6 +13,7 @@ exports[`renders correctly react-test-renderer 1`] = `
     />
     <MongoDBURI
       addCheckmark={[Function]}
+      data-testId="MongoURIInputButton"
       geturi={[Function]}
       schemaData={Object {}}
       sendSchemas={[Function]}
@@ -32,6 +33,7 @@ exports[`renders correctly react-test-renderer 1`] = `
     />
     <MongoSchemaIDE
       graphQLSchema={Object {}}
+      schemaData={Object {}}
       selectedSchemaData={Array []}
     />
   </div>

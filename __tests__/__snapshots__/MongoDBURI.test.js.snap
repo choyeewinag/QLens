@@ -12,6 +12,7 @@ exports[`renders correctly react-test-renderer 1`] = `
     >
       <input
         className="form__field"
+        data-testId="MongoURIInputButton"
         id="name"
         placeholder=" Input Your MongoDB URI"
         type="input"

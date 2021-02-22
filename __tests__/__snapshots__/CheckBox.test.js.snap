@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CheckBox Component Renders Correctly snapshot of CheckBox Component renders 1`] = `
+exports[`renders correctly react-test-renderer 1`] = `
 <div
   className="checkboxContainer"
   id="box"

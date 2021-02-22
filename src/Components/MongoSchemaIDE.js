@@ -9,7 +9,7 @@ import '../public/codemirror.css';
 import '../../node_modules/codemirror/lib/codemirror.css';
 import '../../node_modules/codemirror/theme/dracula.css';
 const _ = require('lodash');
-
+import PropTypes from "prop-types";
 
 const MongoSchemaIDE = ({schemaData, selectedSchemaData, graphQLSchema}) => {
   const [data, setData] = useState([]);
@@ -97,7 +97,7 @@ const MongoSchemaIDE = ({schemaData, selectedSchemaData, graphQLSchema}) => {
         <Tab>GraphQL Schemas</Tab>
         <Tab>MongoDB Schemas</Tab>
       </TabList>
-      <TabPanel>
+      <TabPanel data-testid="GraphQLSchemaContent">
         <div className="codebox2">
           <CodeMirror
             value={_.isEmpty(graphQLSchema) ? `/*
@@ -123,7 +123,7 @@ const MongoSchemaIDE = ({schemaData, selectedSchemaData, graphQLSchema}) => {
             />
         </div>
       </TabPanel>
-      <TabPanel>
+      <TabPanel data-testid="MongoDBSchemaContent">
         <div className="codebox">
           <CodeMirror
           value={_.isEmpty(selectedSchemaData[0]) ? `/*
@@ -150,6 +150,18 @@ const MongoSchemaIDE = ({schemaData, selectedSchemaData, graphQLSchema}) => {
       </Tabs>
     </div>
   )
+}
+
+MongoSchemaIDE.propTypes = {
+  schemaData: PropTypes.object, 
+  selectedSchemaData: PropTypes.array, 
+  graphQLSchema: PropTypes.object,
+};
+
+MongoSchemaIDE.defaultProps = {
+  schemaData: {},
+  selectedSchemaData: [],
+  graphQLSchema: {}
 }
 
 export default MongoSchemaIDE;
