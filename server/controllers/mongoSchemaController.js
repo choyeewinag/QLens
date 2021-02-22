@@ -14,7 +14,9 @@ exports.createMongoSchema = (req, res, next) => {
 
   // Connect to mongodb
   MongoClient.connect(userURI).then(() => {
+    console.log('userURI issssss -> ', userURI)
     const query = `extract-mongo-schema -d "${userURI}" -o qlens.json`;
+    console.log('Complete query-> ', query)
     //Using exec to run extract-mongo-schema package in terminal
     exec(query, (error, stdout, stderr) => {
       if (error) {
@@ -27,6 +29,7 @@ exports.createMongoSchema = (req, res, next) => {
       }
       console.log(`stdout: ${stdout}`);
     });
+    console.log('userURI issssss -> ', userURI)
   });
   let filepath = path.join(__dirname, '../../');
   let file;
