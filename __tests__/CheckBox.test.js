@@ -1,8 +1,7 @@
-
-  import React, { useState, useEffect } from 'react';
-  import renderer from 'react-test-renderer';
-  import CheckBox from '../src/Components/CheckBox';
-  import ShallowRenderer from 'react-test-renderer/shallow';
+import React, { useState, useEffect } from 'react';
+import renderer from 'react-test-renderer';
+import CheckBox from '../src/Components/CheckBox';
+import ShallowRenderer from 'react-test-renderer/shallow';
 
 //Check if testing works
 // describe('My Test Suite', () => {
